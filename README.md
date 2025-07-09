@@ -1,47 +1,47 @@
 # pass.in
 
-O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**. 
+pass.in is an application for **managing attendees at in-person events**.
 
-A ferramenta permite que o organizador cadastre um evento e abra uma página pública de inscrição.
+The tool allows the organizer to register an event and open a public registration page.
 
-Os participantes inscritos podem emitir uma credencial para check-in no dia do evento.
+Registered attendees can issue a credential for check-in on the day of the event.
 
-O sistema fará um scan da credencial do participante para permitir a entrada no evento.
+The system will scan the attendee's credential to allow entry into the event.
 
-## Requisitos
+## Requirements
 
-### Requisitos funcionais
+### Functional Requirements
 
-- [x] O organizador deve poder cadastrar um novo evento;
-- [x] O organizador deve poder visualizar dados de um evento;
-- [x] O organizador deve poser visualizar a lista de participantes; 
-- [x] O participante deve poder se inscrever em um evento;
-- [x] O participante deve poder visualizar seu crachá de inscrição;
-- [x] O participante deve poder realizar check-in no evento;
+- [x] The organizer must be able to register a new event;
+- [x] The organizer must be able to view data for an event;
+- [x] The organizer must be able to view the list of attendees;
+- [x] The attendee must be able to register for an event;
+- [x] The attendee must be able to view their registration badge;
+- [x] The attendee must be able to check into the event;
 
-### Regras de negócio
+### Business Rules
 
-- [x] O participante só pode se inscrever em um evento uma única vez;
-- [x] O participante só pode se inscrever em eventos com vagas disponíveis;
-- [x] O participante só pode realizar check-in em um evento uma única vez;
+- [x] An attendee can only register for an event once;
+- [x] An attendee can only register for events with available spots;
+- [x] An attendee can only check into an event once;
 
-### Requisitos não-funcionais
+### Non-Functional Requirements
 
-- [x] O check-in no evento será realizado através de um QRCode;
+- [x] Event check-in will be done via a QRCode;
 
-## Documentação da API (Swagger)
+## API Documentation (Swagger)
 
-Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
+For API documentation, access the link: https://nlw-unite-nodejs.onrender.com/docs
 
-## Banco de dados
+## Database
 
-Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
+In this application, we will use a relational database (SQL). For the development environment, we will use SQLite for its ease of setup.
 
-### Diagrama ERD
+### ERD Diagram
 
-<img src=".github/erd.svg" width="600" alt="Diagrama ERD do banco de dados" />
+<img src=".github/erd.svg" width="600" alt="Database ERD Diagram" />
 
-### Estrutura do banco (SQL)
+### Database Structure (SQL)
 
 ```sql
 -- CreateTable
